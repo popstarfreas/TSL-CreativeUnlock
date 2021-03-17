@@ -1,12 +1,12 @@
-import PacketWriter from "dimensions/packets/packetwriter";
-import Client from "../../../../client";
-import Command from "../../../../command";
-import CommandHandler from "../../../../commandhandler";
-import CommandHandlers from "../../../../commandhandlers";
-import PacketTypes from "dimensions/packettypes";
+import PacketWriter from "@popstarfreas/packetfactory/packetwriter";
+import Client from "terrariaserver-lite/client";
+import Command from "terrariaserver-lite/command";
+import CommandHandler from "terrariaserver-lite/commandhandler";
+import CommandHandlers from "terrariaserver-lite/commandhandlers";
+import PacketTypes from "terrariaserver-lite/packettypes";
 import CreativeUnlock from "../../";
 
-const MAX_ITEM_NET_ID = 5044;
+const MAX_ITEM_NET_ID = 5087;
 
 class CreativeUnlockCommand extends CommandHandler {
     public names = ["creativeunlock", "journeyunlock", "unlockallitems"];

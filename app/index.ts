@@ -1,6 +1,6 @@
-import Client from "../../client";
-import TerrariaServer from "../..//terrariaserver";
-import Extension from "../../extensions/extension";
+import Client from "terrariaserver-lite/client";
+import TerrariaServer from "terrariaserver-lite/terrariaserver";
+import Extension from "terrariaserver-lite/extensions/extension";
 
 class CreativeUnlocks extends Extension {
     public name = "Creative Unlocks";
