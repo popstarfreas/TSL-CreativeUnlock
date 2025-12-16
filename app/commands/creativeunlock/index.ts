@@ -1,10 +1,9 @@
-import PacketWriter from "@popstarfreas/packetfactory/packetwriter";
 import Client from "terrariaserver-lite/client";
 import Command from "terrariaserver-lite/command";
 import CommandHandler from "terrariaserver-lite/commandhandler";
 import CommandHandlers from "terrariaserver-lite/commandhandlers";
-import PacketTypes from "terrariaserver-lite/packettypes";
-import CreativeUnlock from "../../";
+import CreativeUnlock from "../../index.js";
+import { NetModuleLoadPacket } from "terraria-packet";
 
 const MAX_ITEM_NET_ID = 5087;
 
@@ -19,17 +18,23 @@ class CreativeUnlockCommand extends CommandHandler {
         this._creativeUnlock = creativeUnlock;
     }
 
-    public handle(command: Command, client: Client): void {
+    public handle(_command: Command, client: Client): void {
         if (!this._creativeUnlock.alreadyUnlocked.has(client)) {
             for (let i = 0; i <= MAX_ITEM_NET_ID; i++) {
-                const packet = new PacketWriter()
-                    .setType(PacketTypes.LoadNetModule)
-                    .packUInt16(5) // Creative Unlocks Module
-                    .packInt16(i)
-                    .packInt16(999)
-                    .data;
+                const netModuleLoadPacketResult = NetModuleLoadPacket.toBuffer({
+                    TAG: "CreativeUnlocks",
+                    _0: {
+                        itemId: i,
+                        researchedCount: 999
+                    }
+                })
 
-                client.sendPacket(packet);
+                if (netModuleLoadPacketResult.TAG == "Error") {
+                    const errorMessage = netModuleLoadPacketResult._0.error.message;
+                    client.server.logger.error(`Error while creating NetModuleLoadPacket for creative unlocks: ${netModuleLoadPacketResult._0.context}; ${errorMessage}`);
+                    return
+                }
+                client.sendPacket(netModuleLoadPacketResult._0);
             }
             this._creativeUnlock.alreadyUnlocked.add(client);
             client.sendChatMessage("Unlocked all items.", { R: 0, G: 255, B: 0 });

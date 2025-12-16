@@ -1,0 +1,146 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@types/node':
+        specifier: ^20.6.0
+        version: 20.19.27
+      terraria-packet:
+        specifier: git+https://github.com/popstarfreas/rescript-terrariapacket.git#c8f783d6bdb02b5bcccc4acf74ec53cd5b531501
+        version: https://codeload.github.com/popstarfreas/rescript-terrariapacket/tar.gz/c8f783d6bdb02b5bcccc4acf74ec53cd5b531501(rescript@12.0.1)
+      terrariaserver-lite:
+        specifier: ./TerrariaServer-Lite
+        version: link:TerrariaServer-Lite
+      typescript:
+        specifier: ^5.2.2
+        version: 5.9.3
+
+packages:
+
+  '@popstarfreas/packetfactory@7.1.3':
+    resolution: {integrity: sha512-hgsR+1d99UYykstXveILfRnNCKPFXwEAGImxqOu5OkrLZfMuisu2K1zWg57nzBojk8ckSp0PLupS0Lapv21ZwA==}
+
+  '@popstarfreas/rescript-nodejs@https://codeload.github.com/popstarfreas/rescript-nodejs/tar.gz/f3bd284a3ef17a3fc7cc81ccb7c362b278ea66c7':
+    resolution: {tarball: https://codeload.github.com/popstarfreas/rescript-nodejs/tar.gz/f3bd284a3ef17a3fc7cc81ccb7c362b278ea66c7}
+    version: 16.1.0
+
+  '@rescript/core@1.6.1':
+    resolution: {integrity: sha512-vyb5k90ck+65Fgui+5vCja/mUfzKaK3kOPT4Z6aAJdHLH1eljEi1zKhXroCiCtpNLSWp8k4ulh1bdB5WS0hvqA==}
+    peerDependencies:
+      rescript: '>=11.1.0'
+
+  '@rescript/darwin-arm64@12.0.1':
+    resolution: {integrity: sha512-JJddiKKfOSc9X+2rt6IrbEUlOBaIfgjkWzCN986czZ5YV4lh3jysPVk6EQHaip2ibPkwf/nLv6Pin4t+XmdqLQ==}
+    engines: {node: '>=20.11.0'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@rescript/darwin-x64@12.0.1':
+    resolution: {integrity: sha512-tZSeHr9MQ90oKULDIn9ugvP08eLCflH2uO02iF7z1i8RshPrfD36qFiPOn4WxzcSJuqynffNLEgeWYrnPiZ0JQ==}
+    engines: {node: '>=20.11.0'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@rescript/linux-arm64@12.0.1':
+    resolution: {integrity: sha512-V/xnkFgEvSRMlyT1XCptnWWXgySFR9aKdja74VeDyEGLc6MGmi8zopxUUFcwCQXxV/zPAFkIxjz8xMY0SBCAmQ==}
+    engines: {node: '>=20.11.0'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@rescript/linux-x64@12.0.1':
+    resolution: {integrity: sha512-WpVBjAvLsKATOJTckI6PDf4IFnHHxwsSVtklC+XAXbwqHLP1gqDDuVcykOOIWexxepod+QvBvEZGjzNPJ5L8gA==}
+    engines: {node: '>=20.11.0'}
+    cpu: [x64]
+    os: [linux]
+
+  '@rescript/runtime@12.0.1':
+    resolution: {integrity: sha512-pMoWvllPFK0cl87vMYBVvll+DaAdPAsRuLIIJa+Q8LMhcS7cqpaZVflU3LbH+U/kv3vWaUYIfLBObwGnXw/CDg==}
+
+  '@rescript/win32-x64@12.0.1':
+    resolution: {integrity: sha512-Hv6nwb6A94qtj6b4PcIsmoWhLIcLt6wLuHpD9YNxj4/d9FkrHM/yj9ZKhKan/9rfg4wkHl1cZE898AZe/nWq9g==}
+    engines: {node: '>=20.11.0'}
+    cpu: [x64]
+    os: [win32]
+
+  '@types/node@20.19.27':
+    resolution: {integrity: sha512-N2clP5pJhB2YnZJ3PIHFk5RkygRX5WO/5f0WC08tp0wd+sv0rsJk3MqWn3CbNmT2J505a5336jaQj4ph1AdMug==}
+
+  rescript@12.0.1:
+    resolution: {integrity: sha512-59JyEUyLj+IPd9VutAXpBXRGqaeaHCMtvACJNAy/oI1hjpjklQ2UJE07oLhxoWB4SDZrCxzowNUpE46UAgjOXg==}
+    engines: {node: '>=20.11.0'}
+    hasBin: true
+
+  terraria-packet@https://codeload.github.com/popstarfreas/rescript-terrariapacket/tar.gz/c8f783d6bdb02b5bcccc4acf74ec53cd5b531501:
+    resolution: {tarball: https://codeload.github.com/popstarfreas/rescript-terrariapacket/tar.gz/c8f783d6bdb02b5bcccc4acf74ec53cd5b531501}
+    version: 1.0.0
+
+  typescript@5.9.3:
+    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+  undici-types@6.21.0:
+    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
+
+snapshots:
+
+  '@popstarfreas/packetfactory@7.1.3':
+    dependencies:
+      '@popstarfreas/rescript-nodejs': https://codeload.github.com/popstarfreas/rescript-nodejs/tar.gz/f3bd284a3ef17a3fc7cc81ccb7c362b278ea66c7
+    optionalDependencies:
+      rescript: 12.0.1
+
+  '@popstarfreas/rescript-nodejs@https://codeload.github.com/popstarfreas/rescript-nodejs/tar.gz/f3bd284a3ef17a3fc7cc81ccb7c362b278ea66c7': {}
+
+  '@rescript/core@1.6.1(rescript@12.0.1)':
+    dependencies:
+      rescript: 12.0.1
+
+  '@rescript/darwin-arm64@12.0.1':
+    optional: true
+
+  '@rescript/darwin-x64@12.0.1':
+    optional: true
+
+  '@rescript/linux-arm64@12.0.1':
+    optional: true
+
+  '@rescript/linux-x64@12.0.1':
+    optional: true
+
+  '@rescript/runtime@12.0.1': {}
+
+  '@rescript/win32-x64@12.0.1':
+    optional: true
+
+  '@types/node@20.19.27':
+    dependencies:
+      undici-types: 6.21.0
+
+  rescript@12.0.1:
+    dependencies:
+      '@rescript/runtime': 12.0.1
+    optionalDependencies:
+      '@rescript/darwin-arm64': 12.0.1
+      '@rescript/darwin-x64': 12.0.1
+      '@rescript/linux-arm64': 12.0.1
+      '@rescript/linux-x64': 12.0.1
+      '@rescript/win32-x64': 12.0.1
+
+  terraria-packet@https://codeload.github.com/popstarfreas/rescript-terrariapacket/tar.gz/c8f783d6bdb02b5bcccc4acf74ec53cd5b531501(rescript@12.0.1):
+    dependencies:
+      '@popstarfreas/packetfactory': 7.1.3
+      '@rescript/core': 1.6.1(rescript@12.0.1)
+      '@rescript/runtime': 12.0.1
+    transitivePeerDependencies:
+      - rescript
+
+  typescript@5.9.3: {}
+
+  undici-types@6.21.0: {}
