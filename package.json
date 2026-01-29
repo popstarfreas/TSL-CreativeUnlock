@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "terraria-packet": "git+https://github.com/popstarfreas/rescript-terrariapacket.git#c8f783d6bdb02b5bcccc4acf74ec53cd5b531501",
+    "terraria-packet": "git+https://github.com/popstarfreas/rescript-terrariapacket.git#340c743009b3b7a0168b6e26ba35833a499b812c",
     "@types/node": "^20.6.0",
     "terrariaserver-lite": "./TerrariaServer-Lite",
     "typescript": "^5.2.2"

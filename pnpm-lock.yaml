@@ -12,8 +12,8 @@ importers:
         specifier: ^20.6.0
         version: 20.19.27
       terraria-packet:
-        specifier: git+https://github.com/popstarfreas/rescript-terrariapacket.git#c8f783d6bdb02b5bcccc4acf74ec53cd5b531501
-        version: https://codeload.github.com/popstarfreas/rescript-terrariapacket/tar.gz/c8f783d6bdb02b5bcccc4acf74ec53cd5b531501(rescript@12.0.1)
+        specifier: git+https://github.com/popstarfreas/rescript-terrariapacket.git#340c743009b3b7a0168b6e26ba35833a499b812c
+        version: https://codeload.github.com/popstarfreas/rescript-terrariapacket/tar.gz/340c743009b3b7a0168b6e26ba35833a499b812c(rescript@12.0.1)
       terrariaserver-lite:
         specifier: ./TerrariaServer-Lite
         version: link:TerrariaServer-Lite
@@ -76,8 +76,8 @@ packages:
     engines: {node: '>=20.11.0'}
     hasBin: true
 
-  terraria-packet@https://codeload.github.com/popstarfreas/rescript-terrariapacket/tar.gz/c8f783d6bdb02b5bcccc4acf74ec53cd5b531501:
-    resolution: {tarball: https://codeload.github.com/popstarfreas/rescript-terrariapacket/tar.gz/c8f783d6bdb02b5bcccc4acf74ec53cd5b531501}
+  terraria-packet@https://codeload.github.com/popstarfreas/rescript-terrariapacket/tar.gz/340c743009b3b7a0168b6e26ba35833a499b812c:
+    resolution: {tarball: https://codeload.github.com/popstarfreas/rescript-terrariapacket/tar.gz/340c743009b3b7a0168b6e26ba35833a499b812c}
     version: 1.0.0
 
   typescript@5.9.3:
@@ -133,7 +133,7 @@ snapshots:
       '@rescript/linux-x64': 12.0.1
       '@rescript/win32-x64': 12.0.1
 
-  terraria-packet@https://codeload.github.com/popstarfreas/rescript-terrariapacket/tar.gz/c8f783d6bdb02b5bcccc4acf74ec53cd5b531501(rescript@12.0.1):
+  terraria-packet@https://codeload.github.com/popstarfreas/rescript-terrariapacket/tar.gz/340c743009b3b7a0168b6e26ba35833a499b812c(rescript@12.0.1):
     dependencies:
       '@popstarfreas/packetfactory': 7.1.3
       '@rescript/core': 1.6.1(rescript@12.0.1)
